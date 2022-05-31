@@ -42,6 +42,142 @@
           </ul>
         </nav>      
       </header>
+      <main class="main-inner">
+        <header class="inner-header">
+            <h1 class="inner-header-title">Гостиницы Седоны</h1>
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link" href="index.html">
+                    <span class="visually-hidden">
+                        Главная
+                    </span> 
+                </a>
+                </li>
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link">Гостиницы</a>
+                </li>
+              </ul>
+        </header>
+        <section class="catalog-hotels">
+            <h2 class="visually-hidden">Каталог гостиниц с фильтрами</h2>
+            <form class="catalog-filter" action="#" method="get">
+                <fieldset class="catalog-filter-group">
+                    <legend class="catalog-filter-title">Инфраструктура:</legend>
+                    <ul class="catalog-filter-list">
+                        <li class="catalog-filter-item">
+                            <label class="control">Бассейн
+                                <input class="control-input" type="checkbox" name="pool" checked>
+                            </label>
+                        </li>
+                        <li class="catalog-filter-item">
+                            <label class="control">Парковка
+                                <input class="control-input" type="checkbox" name="parking" checked>
+                            </label>
+                        </li>
+                        <li class="catalog-filter-item">
+                            <label class="control">Wi-Fi
+                                <input class="control-input" type="checkbox" name="wi-fi">
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="catalog-filter-group">
+                    <legend class="catalog-filter-title">Тип жилья:</legend>
+                    <ul class="catalog-filter-list">
+                        <li class="catalog-filter-item">
+                            <label class="control">Гостиница
+                                <input class="control-input" type="radio" name="product-group" value="hotel" checked>
+                            </label>
+                        </li>
+                        <li class="catalog-filter-item">
+                            <label class="control">Мотель
+                                <input class="control-input" type="radio" name="product-group" value="motel">
+                            </label>
+                        </li>
+                        <li class="catalog-filter-item">
+                            <label class="control">Апартаменты
+                                <input class="control-input" type="radio" name="product-group" value="apartment">
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button class="button" type="submit">Применить</button>
+                <button class="button" type="submit">Сбросить</button>
+            </form>
+            <div class="catalog-filter-results">
+                <span>Найдено гостиниц: 38</span>
+                <select class="select-control" aria-label="Сортировка">
+                    <option value="popular">Сначала популярное</option>
+                    <option value="cheap">Сначала дешёвое</option>
+                    <option value="expensive">Сначала дорогое</option>
+                </select>
+                <a href="#" class="button">
+                    <span class="visually-hidden">Показать карточки</span>
+                </a>
+                <a class="button" href="#">
+                    <span class="visually-hidden">Показать слайдшоу</span>
+                </a>
+                <a class="button" href="#">
+                    <span class="visually-hidden">Показать список</span>
+                </a>
+            </div>
+            <ul class="product-list">
+
+                <li class="product-card">
+                    <a class="product-card-link" href="#">
+                        <img class="product-card-image" src="#" alt="Вид из отеля"/>
+                        <h3 class="product-card-title">Amara Resort & Spa</h3>
+                    </a>
+                    <span class="product-card-group">Гостиница</span>
+                    <b class="product-card-price">От 4000 ₽</b>
+                    <a class="product-card-button-link button-details" href="#">Подробнее</a>
+                    <button class="product-card-button button-favorite" type="button">В Избранное</button>
+                    <span class="product-card-category visually-hidden">Категория отеля</span>
+                    <a class="product-card-rating" href="#">Рейтинг: 8,5</a>
+                </li>
+                <li class="product-card">
+                    <a class="product-card-link" href="#">
+                        <img class="product-card-image" src="#" alt="Вид из отеля"/>
+                        <h3 class="product-card-title">Amara Resort & Spa</h3>
+                    </a>
+                    <span class="product-card-group">Гостиница</span>
+                    <b class="product-card-price">От 4000 ₽</b>
+                    <a class="product-card-button-link button-details" href="#">Подробнее</a>
+                    <button class="product-card-button button-favorite" type="button">В Избранное</button>
+                    <span class="product-card-category visually-hidden">Категория отеля</span>
+                    <a class="product-card-rating" href="#">Рейтинг: 8,5</a>
+                </li>
+                <li class="product-card">
+                    <a class="product-card-link" href="#">
+                        <img class="product-card-image" src="#" alt="Вид из отеля"/>
+                        <h3 class="product-card-title">Amara Resort & Spa</h3>
+                    </a>
+                    <span class="product-card-group">Гостиница</span>
+                    <b class="product-card-price">От 4000 ₽</b>
+                    <a class="product-card-button-link button-details" href="#">Подробнее</a>
+                    <button class="product-card-button button-favorite" type="button">В Избранное</button>
+                    <span class="product-card-category visually-hidden">Категория отеля</span>
+                    <a class="product-card-rating" href="#">Рейтинг: 8,5</a>
+                </li>
+                <li class="product-card">
+                    <a class="product-card-link" href="#">
+                        <img class="product-card-image" src="#" alt="Вид из отеля"/>
+                        <h3 class="product-card-title">Amara Resort & Spa</h3>
+                    </a>
+                    <span class="product-card-group">Гостиница</span>
+                    <b class="product-card-price">От 4000 ₽</b>
+                    <a class="product-card-button-link button-details" href="#">Подробнее</a>
+                    <button class="product-card-button button-favorite" type="button">В Избранное</button>
+                    <span class="product-card-category visually-hidden">Категория отеля</span>
+                    <a class="product-card-rating" href="#">Рейтинг: 8,5</a>
+                </li>
+            </ul>
+
+        </section>
+
+        
+    
+      </main>
 
 
       <footer class="footer-index">
