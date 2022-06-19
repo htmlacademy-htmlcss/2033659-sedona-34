@@ -17,7 +17,37 @@
 
 body {
     font-family: "PT Sans", sans-serif;
-    font size: 18px;
-    line height: 21px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    background-color: #FFFFFF;
 }
-  
+
+/* Pages */
+
+.navigation-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    text-decoration: none;
+    text-align: left;
+}
+
+.hotel-search-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #756157;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.hero {
+    background-image: url("../images/welcome-background.jpg");
+    background-color:#FFFFFF;
+    color: #333333;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+  }
