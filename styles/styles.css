@@ -21,6 +21,7 @@ body {
     line-height: 21px;
     color: #333333;
     background-color: #FFFFFF;
+    text-align: center;
 }
 
 /* Pages */
@@ -40,14 +41,34 @@ body {
     line-height: 20px;
     background-color: #756157;
     color: #FFFFFF;
-    text-align: center;
 }
 
-.hero {
+.hero-welcome-image {
     background-image: url("../images/welcome-background.jpg");
-    background-color:#FFFFFF;
-    color: #333333;
     background-size: 100% auto;
     background-repeat: no-repeat;
+}
 
-  }
+.hero-welcome-title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.advantages-item-town {
+    background-color: #82B3D3;
+    color: #FFFFFF;
+}
+
+.advantages-item-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.advanteges-details-item-with-icon-home {
+    
+}
