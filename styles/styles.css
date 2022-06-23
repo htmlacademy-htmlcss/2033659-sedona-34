@@ -19,21 +19,20 @@ body {
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
+    font-weight: 400;
     color: #333333;
     background-color: #FFFFFF;
 }
-
-
 
 .button {
     color: #FFFFFF;
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .hotel-search-button {
-    font-size: 16px;
-    line-height: 20px;
     background-color: #756157;
 }
 
@@ -48,7 +47,23 @@ body {
     background-color: #82B3D3;
 }
 
+.filter-button {
+    background-color: #82B3D3;
+}
 
+.reset-button {
+    font-weight: 400;
+    text-transform: none;
+    background-color: inherit;
+}
+
+.product-card-button {
+    background: #82B3D3;
+}
+
+.button-favorite-selected {
+    background: #7DB54F;
+}
 .navigation-link {
     font-weight: 700;
     font-size: 20px;
@@ -169,6 +184,39 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+}
+
+.catalog-results-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.product-card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.product-card-price {
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    color: inherit;
+}
+
+.product-card-button-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    background: #756157;
+    color: #FFFFFF;
+
 }
 
 
