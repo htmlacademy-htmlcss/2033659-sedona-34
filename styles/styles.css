@@ -19,12 +19,12 @@ body {
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
-    font-weight: 400;
     color: #333333;
     background-color: #FFFFFF;
 }
 
 .button {
+    font-family: inherit;
     color: #FFFFFF;
     text-transform: uppercase;
     font-weight: 700;
@@ -256,4 +256,11 @@ body {
     color: #000000;
 }
 
+.subscribe-input-email {
+    font-family: inherit;
+}
+
+.select-control {
+    font-family: inherit;
+}
 
