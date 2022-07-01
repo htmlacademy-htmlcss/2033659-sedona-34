@@ -45,12 +45,13 @@ body {
 .logo-header {
     display: block;
     width: 139px;
-    margin-left: 70px;
+    padding-left: 70px;
     margin-right: 30px;
 }
 
 
 .navigation-list {
+    list-style: none;
     width: 500px;
     margin: 0;
     padding: 0;
@@ -135,6 +136,7 @@ body {
 
 
 .advantages-list {
+    list-style: none;
     margin: 0;
     padding: 0;
 }
@@ -143,16 +145,20 @@ body {
 .advantages-details-list {
     display: flex;
     justify-content: space-between;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.advantages-item-bridge, .item-space, .item-road, .item-tourists {
+.advantages-item-town, .advantages-item-bridge, .item-space, .item-road, .item-tourists {
     width: 400px;
+    padding: 0 85px;
 }
 
 .advanteges-details-item {
     width: 400px;
+    padding: 0 85px;
+
 }
 
 
@@ -229,13 +235,38 @@ body {
     color: #FFFFFF;
 }
 
+.footer-container{
+    display:flex;
+    justify-content: space-between;
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.footer-social-list {
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 .phone {
+    display: block;
     font-size: 40px;
     line-height: 40px;
     color: #000000;
     text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
+    width: 720px;
+    margin: 0;
+    padding: 0;
+}
+
+.developer-link {
+    display: block;
+    width: 115px;
+    margin: 0;
+    padding: 0;
 }
 .inner-column {
     background-image: url("../images/catalog/filter-background.jpg");
