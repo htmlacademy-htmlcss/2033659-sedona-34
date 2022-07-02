@@ -421,13 +421,18 @@ body {
     background: #F2F2F2;
 }
 
-.pagination-container{
+.pagination-container {
     display: flex;
     width: 1056px;
-    margin: auto;
+    margin: 0 auto;
     justify-content: space-between;
 }
 
+.pagination { 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 .pagination-link {
     text-decoration: none;
     background: #82B3D3;
