@@ -381,11 +381,11 @@ body {
     margin-right: 71px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .product-card {
     width: 340px;
-    padding: 20px;
 }
 
 .product-card-title {
@@ -419,6 +419,13 @@ body {
     text-transform: uppercase;
     color: #333333;
     background: #F2F2F2;
+}
+
+.pagination-container{
+    display: flex;
+    width: 1056px;
+    margin: auto;
+    justify-content: space-between;
 }
 
 .pagination-link {
