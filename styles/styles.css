@@ -36,7 +36,7 @@ body {
     margin: 0 auto;
 }
 
-.header-container {
+.header-wrapper {
     display: flex;
     width: 1060px;
     margin: 0 auto;
@@ -113,7 +113,7 @@ body {
     text-align: left;
 }
 
-.main-container {
+.main-wrapper {
     flex-grow: 1;
 }
 
@@ -164,16 +164,16 @@ body {
 
 
 
-.advantages-item-town-container {
+.advantages-item-town-wrapper {
     display: flex;
 }
 
 
-.advantages-item-bridge-container {
+.advantages-item-bridge-wrapper {
     display: flex;
 }
 
-.advantages-items-container {
+.advantages-items-wrapper {
     display: flex;
     justify-content: space-between;
 
@@ -260,8 +260,6 @@ body {
     text-decoration: none;
 }
 
-
-
 .phone {
     display: block;
     font-size: 40px;
@@ -289,7 +287,7 @@ body {
     background-color: #82B3D3;
 }
 
-.filter-container {
+.filter-wrapper {
     width: 1059.53px;
     margin: auto;
 }
@@ -365,7 +363,7 @@ body {
     margin-right: 78px;
 }
 
-.view-container{
+.view-wrapper{
     width: 160px;
     margin-left: auto;
 }
@@ -375,7 +373,7 @@ body {
     padding: 0px;
 }
 
-.product-list-container {
+.product-list-wrapper {
     width: 1056px;
     margin-left: 73px;
     margin-right: 71px;
@@ -421,7 +419,7 @@ body {
     background: #F2F2F2;
 }
 
-.pagination-container {
+.pagination-wrapper {
     display: flex;
     width: 1056px;
     margin: 0 auto;
