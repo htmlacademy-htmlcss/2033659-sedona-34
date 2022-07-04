@@ -140,6 +140,8 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -152,17 +154,15 @@ body {
 }
 
 .advantages-item-town, .advantages-item-bridge, .item-space, .item-road, .item-tourists {
-    width: 400px;
+    width: 230px;
     padding: 0 85px;
 }
 
 .advanteges-details-item {
-    width: 400px;
+    width: 230px;
     padding: 0 85px;
 
 }
-
-
 
 .advantages-item-town-wrapper {
     display: flex;
@@ -171,12 +171,6 @@ body {
 
 .advantages-item-bridge-wrapper {
     display: flex;
-}
-
-.advantages-items-wrapper {
-    display: flex;
-    justify-content: space-between;
-
 }
 
 .advantages-item-title, .advanteges-details-title {
@@ -193,7 +187,6 @@ body {
 .advantages-item-town, .advantages-item-bridge {
     background-color: #82B3D3;
     color: #FFFFFF;
-    width: 400px;
 }
 
 .icon-home, .icon-souvenirs, .item-space, .item-tourists{
