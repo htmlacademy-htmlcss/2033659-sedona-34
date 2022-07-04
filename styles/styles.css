@@ -371,9 +371,6 @@ body {
 .product-list {
     list-style: none;
     padding: 0;
-}
-
-.product-list-wrapper {
     width: 1056px;
     margin-left: 73px;
     margin-right: 71px;
