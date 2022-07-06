@@ -28,12 +28,16 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #333333;
-    background-color: #FFFFFF;
+    background: #F2F2F2;
+
 }
 
 .page-container {
     width: 1200px;
     margin: 0 auto;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
 }
 
 .header-wrapper {
@@ -273,7 +277,7 @@ body {
     margin: 0;
     padding: 0;
 }
-.inner-column {
+.catalog-filter-section {
     background-image: url("../images/catalog/filter-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -335,14 +339,14 @@ body {
     margin-left: auto;
 }
 
-.catalog-results {
+.catalog-selection {
     display: flex;
     margin-left: 72px;
     margin-right: 71px;
     width: 1056px;
 }
 
-.catalog-results-title {
+.catalog-selection-title {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
