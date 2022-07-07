@@ -29,7 +29,17 @@ body {
     line-height: 21px;
     color: #333333;
     background: #F2F2F2;
+}
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .page-container {
@@ -37,35 +47,9 @@ body {
     margin: 0 auto;
     background-color: #FFFFFF;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-
 }
 
-.header-wrapper {
-    display: flex;
-    width: 1060px;
-    margin: 0 auto;
-}
-
-.logo-header {
-    display: block;
-    width: 139px;
-    padding: 0;
-    margin: 0;
-    margin-right: 30px;
-}
-
-
-.navigation-list {
-    list-style: none;
-    width: 500px;
-    margin: 0;
-    padding: 0;
-}
-
-.navigation-user {
-    width: 304px;
-    margin-left: auto;
-}
+/* Button */
 
 .button {
     font-family: inherit;
@@ -108,7 +92,36 @@ body {
 .button-favorite-selected {
     background: #7DB54F;
 }
+
+/* Header */
+
+.header-wrapper {
+    display: flex;
+    width: 1060px;
+    height: 65px;
+    margin: 0 auto;
+}
+
+.logo-header {
+    display: block;
+    width: 139px;
+    padding: 0;
+    margin: 0;
+    margin-right: 30px;
+}
+
+.navigation-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 500px;
+    margin: 0;
+    padding: 0;
+}
+
 .navigation-link {
+    display: block;
+    padding: 20px 17px;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
@@ -116,6 +129,20 @@ body {
     text-decoration: none;
     text-align: left;
 }
+
+.navigation-user {
+    display: flex;
+    justify-content: flex-end;
+    width: 304px;
+    margin-left: auto;
+}
+
+.navigation-user .navigation-link {
+    min-width: 18px;
+    min-height: 18px;
+}
+
+/* Main */
 
 .main-wrapper {
     flex-grow: 1;
@@ -125,10 +152,14 @@ body {
     text-align: center;
 }
 
+/* Hero */
+
 .hero-welcome-image {
     background-image: url("../images/welcome-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
+    padding: 51px 371px 82px;
+    margin-bottom: 63px;
 }
 
 .hero-welcome-title {
@@ -137,9 +168,22 @@ body {
     line-height: 36px;
     color: #000000;
     text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 31px;
+    padding: 0 290px;
 }
 
+.hero-welcome-description {
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 90px;
+}
 
+/* Advantages */
+
+.advantages {
+    margin-bottom: 91px;
+}
 .advantages-list {
     list-style: none;
     margin: 0;
@@ -148,31 +192,29 @@ body {
     flex-wrap: wrap;
 }
 
-
 .advantages-details-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
 .advantages-item-town, .advantages-item-bridge, .item-space, .item-road, .item-tourists {
     width: 230px;
-    padding: 0 85px;
+    padding: 92px 85px;
 }
 
 .advanteges-details-item {
     width: 230px;
-    padding: 0 85px;
-
+    height: 223px;
+    padding: 92px 85px;
 }
 
 .advantages-item-town-wrapper {
     display: flex;
 }
-
 
 .advantages-item-bridge-wrapper {
     display: flex;
@@ -184,11 +226,23 @@ body {
     line-height: 28px;
     text-transform: uppercase;
     color: #000000;
+    margin: 0;
+    margin-bottom: 30px;
 }
 .item-title-town, .item-title-bridge {
     color: #FFFFFF;
 }
 
+.advantages-item-number {
+    display: block;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.advantages-description {
+    display: block;
+    margin: 0;
+}
 .advantages-item-town, .advantages-item-bridge {
     background-color: #82B3D3;
     color: #FFFFFF;
@@ -204,6 +258,13 @@ body {
     background:rgba(131, 179, 211, 0.2);
 }
 
+.item-space, .item-road, .item-tourists {
+    width: 230px;
+    height: 179px;
+}
+
+/* Search */
+
 .hotel-search {
     padding: 0 304px;
 }
@@ -213,16 +274,23 @@ body {
     font-size: 30px;
     line-height: 36px;
     color: #000000;
+    margin: 0;
+    margin-bottom: 29px;
+    text-transform: uppercase;
 }
 .hotel-search-description {
     font-size: 22px;
     line-height: 26px;
+    margin: 0;
+    margin-bottom: 56px;
 }
 
 .subscribe {
     font-size: 22px;
     line-height: 26px;
 }
+
+/* Subscribe */
 
 .subscribe-index {
     background-color: #82B3D3;
@@ -238,20 +306,40 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 29px;
+    padding-top: 94px;
 }
+
+.subscribe-description {
+    margin: 0 auto 46px;
+    width: 457px;
+
+
+}
+
+/* Footer */
 
 .footer-container{
     display:flex;
     justify-content: space-between;
     width: 1060px;
     margin: 0 auto;
+    padding: 40px 0 30px;
 }
 
 .footer-social-list {
+    display: flex;
+    flex-wrap: wrap;
     width: 200px;
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style-type: none;
+}
+
+.footer-social-item {
+    width: 47px;
+    height: 40px;
 }
 
 .footer-social-link {
