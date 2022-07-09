@@ -209,7 +209,7 @@ body {
 .advanteges-details-item {
     width: 230px;
     height: 223px;
-    padding: 92px 85px;
+    padding: 80px 85px 81px;
 }
 
 .advantages-item-town-wrapper {
@@ -253,6 +253,7 @@ body {
 }
 .advanteges-details-title {
     color: #000000;
+    padding-top: 120px;
 }
 .item-road {
     background:rgba(131, 179, 211, 0.2);
@@ -261,6 +262,7 @@ body {
 .item-space, .item-road, .item-tourists {
     width: 230px;
     height: 179px;
+    padding: 103px 85px 102px;
 }
 
 /* Search */
@@ -313,9 +315,7 @@ body {
 
 .subscribe-description {
     margin: 0 auto 46px;
-    width: 457px;
-
-
+    width: 475px;
 }
 
 /* Footer */
