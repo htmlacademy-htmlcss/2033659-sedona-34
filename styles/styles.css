@@ -528,6 +528,11 @@ body {
     row-gap: 16px;
 }
 
+.product-card-image {
+    width: 300px;
+    object-fit: contain;
+}
+
 .product-card-link {
     grid-column: 1 / -1;
 }
