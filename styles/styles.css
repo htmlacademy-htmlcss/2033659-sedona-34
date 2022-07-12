@@ -76,10 +76,12 @@ body {
 }
 
 .filter-button {
+    display: block;
     background-color: #82B3D3;
 }
 
 .reset-button {
+    display: block;
     font-weight: 400;
     text-transform: none;
     background-color: inherit;
@@ -457,6 +459,9 @@ body {
 }
 
 .filter-button-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     margin-left: auto;
 }
 /* Selection */
