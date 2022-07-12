@@ -76,10 +76,12 @@ body {
 }
 
 .filter-button {
+    display: block;
     background-color: #82B3D3;
 }
 
 .reset-button {
+    display: block;
     font-weight: 400;
     text-transform: none;
     background-color: inherit;
@@ -98,9 +100,11 @@ body {
 .header-wrapper {
     display: flex;
     width: 1060px;
-    height: 65px;
     margin: 0 auto;
+    margin-bottom: -4px;
 }
+
+
 
 .logo-header {
     display: block;
@@ -115,6 +119,7 @@ body {
     flex-wrap: wrap;
     list-style-type: none;
     width: 500px;
+    height: auto;
     margin: 0;
     padding: 0;
 }
@@ -294,13 +299,15 @@ body {
 
 /* Subscribe */
 
+
+
 .subscribe-index {
     background-color: #82B3D3;
     background-image: url("../images/subscription-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     color: #FFFFFF;
-    padding: 0 200px;
+    padding: 94px 200px;
 }
 .subscribe-title {
     font-weight: 700;
@@ -310,13 +317,23 @@ body {
     color: #FFFFFF;
     margin: 0;
     margin-bottom: 29px;
-    padding-top: 94px;
 }
 
 .subscribe-description {
     margin: 0 auto 46px;
     width: 475px;
 }
+
+.subscribe-form {
+    display: grid;
+    grid-template-columns: 600px 200px;
+    margin-bottom: 0;
+}
+
+.subscribe-input-email {
+    font-family: inherit;
+}
+
 
 /* Footer */
 
@@ -325,7 +342,7 @@ body {
     justify-content: space-between;
     width: 1060px;
     margin: 0 auto;
-    padding: 40px 0 30px;
+    padding: 45px 0 30px;
 }
 
 .footer-social-list {
@@ -442,6 +459,9 @@ body {
 }
 
 .filter-button-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     margin-left: auto;
 }
 /* Selection */
@@ -482,25 +502,39 @@ body {
     margin-right: 8px;
 }
 
-
 .view-link:nth-child(3n) {
     margin-right: 0;
 }
 
+/* Product-list */
+
 .product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
     list-style: none;
     padding: 0;
     width: 1056px;
-    min-height: 876px;
-    margin: 0 73px 66px 71px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    margin: 0 71px 66px 73px;
+    column-gap: 18px;
 }
 
 .product-card {
+    display: grid;
+    grid-template-rows: 211px min-content auto min-content min-content;
+    grid-template-columns: 140px 140px;
     width: 300px;
     padding: 20px;
+    column-gap: 20px;
+    row-gap: 16px;
+}
+
+.product-card-image {
+    width: 300px;
+    object-fit: contain;
+}
+
+.product-card-link {
+    grid-column: 1 / -1;
 }
 
 .product-card-title {
@@ -508,6 +542,8 @@ body {
     font-size: 24px;
     line-height: 28px;
     color: #000000;
+    margin: 0;
+    grid-column: 1 / -1;
 }
 
 .product-card-price {
@@ -525,6 +561,8 @@ body {
     line-height: 20px;
     background: #756157;
     color: #FFFFFF;
+    text-align: center;
+    padding: 9px 15px 8px 15px;
 }
 
 .product-card-rating-link {
@@ -534,7 +572,11 @@ body {
     text-transform: uppercase;
     color: #333333;
     background: #F2F2F2;
+    text-align: center;
+    padding: 9px 22px 8px 23px;
 }
+
+
 
 /* Paginatiom */
 
@@ -601,16 +643,3 @@ body {
     margin: 0;
     margin-bottom: 29px;
 }
-
-.subscribe-description {
-    margin-bottom: 46px;
-}
-
-.subscribe-form {
-    margin-bottom: 94px;
-}
-
-.subscribe-input-email {
-    font-family: inherit;
-}
-/* bbnb */
