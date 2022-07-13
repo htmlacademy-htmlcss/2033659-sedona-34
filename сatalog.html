@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
@@ -13,29 +14,28 @@
         <nav class="navigation">
           <div class="header-wrapper">
             <a class="navigation-logo">
-              <img class=logo-header src="images/header/main-logo.svg" width="139" height="70"
-                alt="Логотип города Седона">
+            <img class=logo-header src="images/header/main-logo.svg" width="139" height="70" alt="Логотип города Седона">
             </a>
             <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="navigation-link" href="index.html">Главная</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="index.html#about">О Седоне</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
-              </li>
+                <li class="navigation-item">
+                  <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="index.html#about">О Седоне</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="catalog.html">Гостиницы</a>
+                </li>
             </ul>
             <ul class="navigation-list navigation-user">
-              <li class="navigation-item">
+              <li class="navigation-item navigation-item-search">
                 <a class="navigation-link" href="#">
                   <span class="visually-hidden">
                     Поиск
                   </span>
-                </a>
+                  </a>
               </li>
-              <li class="navigation-item">
+              <li class="navigation-item navigation-item-favorite">
                 <a class="navigation-link" href="#">
                   <span class="visually-hidden">
                     Избранное
@@ -130,8 +130,8 @@
 
                 <div class="range-wrapper-inputs">
                   <div class="range-input-container">
-                    <label class="range-input-label" for="range-input">от</label>
-                    <input class="range-input range-input-min" id="range-input-min"type="number" value="0" name="min-price">
+                    <label class="range-input-label" for="range-input-min">от</label>
+                    <input class="range-input range-input-min" id="range-input-min" type="number" value="0" name="min-price">
                   </div>
                   <div class="range-input-container">
                     <label class="range-input-label" for="range-input-max">до</label>

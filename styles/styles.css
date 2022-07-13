@@ -199,19 +199,19 @@ body {
     padding-left: 12px;
     padding-right: 12px;
 }
-.navigation-user .navigation-item:nth-child(1) .navigation-link{
+.navigation-item-search {
     background-image: url("../images/header/navigation-search.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.navigation-user .navigation-item:nth-child(2) .navigation-link{
+.navigation-item-favorite {
     position: relative;
     background-image: url("../images/header/navigation-favorite.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
-.navigation-user .navigation-item:nth-child(2) .navigation-link::before {
+.navigation-item-favorite .navigation-link::before {
     position: absolute;
     width: 20px;
     height: 20px;
