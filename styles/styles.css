@@ -62,6 +62,7 @@ body {
     line-height: 20px;
     border: none;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 .hotel-search-button {
@@ -70,12 +71,16 @@ body {
     margin-left: 20px;
 }
 
+.hotel-search-button:hover, .hotel-search-button:focus {
+    background: #615048;
+}
+
+
 .main-search-button {
     font-size: 20px;
     line-height: 36px;
     padding: 12px 15px 12px 15px;
     margin-bottom: 93px;
-
 }
 
 .subscribe-button {
@@ -83,7 +88,10 @@ body {
     line-height: 36px;
     background-color: #82B3D3;
     padding: 12px 15px 12px 15px;
+}
 
+.subscribe-button:hover,  .subscribe-button:focus, .filter-button:hover, .filter-button:focus {
+    background: #68A2CA;
 }
 
 .filter-button {
@@ -97,6 +105,15 @@ body {
     font-weight: 400;
     text-transform: none;
     background-color: inherit;
+}
+
+.reset-button:hover, .reset-button:active {
+    opacity: 0.6;
+}
+
+.reset-button:focus {
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
 }
 
 .button + .button {
@@ -120,8 +137,6 @@ body {
     margin: 0 auto;
     margin-bottom: -4px;
 }
-
-
 
 .logo-header {
     display: block;
@@ -152,6 +167,23 @@ body {
     text-align: left;
 }
 
+
+.navigation-link-current {
+    display: block;
+    position: relative;
+}
+
+.navigation-link-current::before {
+    position: absolute;
+    content: "";
+    background: #756257;
+    left: 17px;
+    right: 17px;
+    bottom: 0;
+    height: 2px;
+}
+
+
 .navigation-user {
     display: flex;
     justify-content: flex-end;
@@ -173,9 +205,21 @@ body {
 }
 
 .navigation-user .navigation-item:nth-child(2) .navigation-link{
+    position: relative;
     background-image: url("../images/header/navigation-favorite.svg");
     background-repeat: no-repeat;
     background-position: center;
+}
+.navigation-user .navigation-item:nth-child(2) .navigation-link::before {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 16px;
+    left: 24px;
+    background: #7DB54F;
+    content: "";
+    border-radius: 10px;
+
 }
 
 
@@ -404,6 +448,10 @@ body {
     text-decoration: none;
 }
 
+.footer-social-link:hover {
+    background: #68A2CA;
+}
+
 .footer-social-vk, .footer-social-telegram, .footer-social-youtube {
     position: absolute;
     top: 0;
@@ -577,13 +625,17 @@ body {
     width: 48px;
     height: 48px;
     border: 2px solid #E5E5E5;
+    border-radius: 4px;
     margin-right: 8px;
 }
 
-.view-current {
+.view-current, .view-link:hover, .view-link:hover:active {
     border: 2px solid #000000;
 }
 
+.view-link:focus {
+    border: 2px solid #68A2CA;
+}
 
 
 .view-link:nth-child(3n) {
