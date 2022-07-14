@@ -42,6 +42,10 @@ body {
     overflow: hidden;
 }
 
+.no-wrap {
+    white-space: nowrap;
+}
+
 .page-container {
     width: 1200px;
     margin: 0 auto;
@@ -443,7 +447,7 @@ body {
 }
 
 .subscribe-input-email {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -859,7 +863,7 @@ body {
     padding: 11px 20px 14px;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
