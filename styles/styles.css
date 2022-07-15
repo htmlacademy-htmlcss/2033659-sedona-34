@@ -252,7 +252,7 @@ body {
 
 .hero-welcome-image::after {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     right: 0;
     left: 0;
     height: 57px;
