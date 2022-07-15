@@ -225,9 +225,21 @@ body {
     top: 11px;
     left: 24px;
     background: #7DB54F;
-    content: "";
+    content: "12";
+    color: #ffffff;
+    font-family: 'PT Sans',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.1em;
     border-radius: 10px;
+
+
 }
+
+
 
 
 /* Main */
@@ -258,6 +270,7 @@ body {
     height: 57px;
     background: url(../images/welcome-divider.svg) 50% 100% no-repeat;
     content: "";
+
 }
 
 .hero-wecome-text {
@@ -459,6 +472,7 @@ body {
     border-style: none;
     border-radius: 10px 0 0 10px;
     background: #F2F2F2;
+    border: 3px solid transparent ;
 }
 
 .subscribe-input-email:hover {
@@ -472,7 +486,7 @@ body {
 
 .subscribe-input-email:active {
     background:#FFFFFF;
-    border: 2px solid #000000;
+    border: 3px solid #000000;
 }
 
 
@@ -523,7 +537,6 @@ body {
 .footer-social-link:active path {
     fill: rgba(104, 162, 202, 0.3);
 }
-
 
 .phone {
     display: block;
@@ -782,6 +795,20 @@ body {
     border-left: none;
  }
 
+ .range-input-min:hover, .range-input-max:hover {
+    border: 2px solid #FFFFFF;
+    opacity: 0.6;
+ }
+
+ .range-input-min:focus, .range-input-max:focus {
+    box-shadow: 0 0 0 3px #81B3D2;
+ }
+
+ .range-input-min:active, .range-input-max:active {
+    background: #756257;
+ }
+
+
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   appearance: none;
@@ -860,13 +887,17 @@ body {
     width: 290px;
     height: 49px;
     margin-right: 78px;
-    padding: 11px 20px 14px;
+    padding: 11px 62px 14px 20px;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    background-image: url("../images/catalog/icon-select-mark.svg");
+    background-repeat: no-repeat;
+    background-position: right 19px center;
+    appearance: none;
 }
 
 .view-wrapper {
