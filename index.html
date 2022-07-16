@@ -185,6 +185,38 @@
           </a>
         </div>
       </footer>
+
+      <div class="modal-container">
+        <div class="modal modal-auth">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="search-form" action="#" method="post">
+              <p class="field-group">
+                <label for="arrival-date">Дата заезда:</label>
+                <input class="search-form-field field" type="date" id="arrival-date" name="arrival-date" placeholder="Укажите дату">
+              </p>
+              <p class="field-group">
+                <label for="departure-date">Дата выезда:</label>
+                <input class="search-form-field field" type="date" id="departure-date" name="departure-date" placeholder="Укажите дату">
+              </p>
+              <p class="field-group">
+                <label for="adults">Взрослые:</label>
+                <input class="search-form-field field" type="number" id="adults" name="adults" placeholder="2">
+              </p>
+              <p class="field-group">
+                <label for="children">Дети:</label>
+                <input class="search-form-field field" type="number" id="children" name="children" placeholder="2">
+              </p>
+              <button class="button modal-search-button" type="submit">Найти</button>
+            </form>
+          </section>
+        </div>
+      </div>
+
+
     </div>
   </body>
 </html>
