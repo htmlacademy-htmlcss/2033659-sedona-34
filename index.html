@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
@@ -69,7 +69,9 @@
                   <span class="advantages-item-number">— №1 —</span>
                   <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
-                <img class="advantages-item-img" src="images/advantage/advantage-photo-1.jpg" width="800" alt="Дома Седоны">
+                <div>
+                  <img class="advantages-item-img" src="images/advantage/advantage-photo-1.jpg" width="800" heit="384" alt="Дома Седоны">
+                </div>
               </div>
               <ul class="advantages-details-list">
                 <li class="advanteges-details-item item-with-icon icon-home">
@@ -91,7 +93,9 @@
             </li>
             <li class="advantages-item">
               <div class="advantages-item-bridge-wrapper">
-                <img class="advantages-item-img" src="images/advantage/advantage-photo-2.jpg" width="800" alt="Мост дьявола">
+                <div>
+                  <img class="advantages-item-img" src="images/advantage/advantage-photo-2.jpg" width="800" height="384" alt="Мост дьявола">
+                </div>
                 <div class="advantages-item-bridge">
                   <h3 class="advantages-item-title item-title-bridge">Там есть<br>
                   мост дьявола</h3>
@@ -185,6 +189,63 @@
           </a>
         </div>
       </footer>
+
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-search">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="search-form" action="#" method="post">
+              <div class="field-group">
+                <label class="label-search" for="arrival-date">Дата Заезда:</label>
+                <div>
+                  <input class="search-form-field date" type="text" id="arrival-date" name="arrival-date" placeholder="Укажите дату" value="27 апреля 2020">
+                  <span class="search-form-field-error">Мы не можем отправить вас в прошлое.</span>
+                </div>
+              </div>
+              <div class="field-group">
+                <label class="label-search" for="departure-date">Дата Выезда:</label>
+                <div>
+                  <input class="search-form-field date" type="text" id="departure-date" name="departure-date" placeholder="Укажите дату" value="1 сентября 2021">
+                  <span class="search-form-field-info">На эти даты есть свободные номера. Пока есть.</span>
+                </div>
+              </div>
+              <div class="guests-wrapper">
+                <div class="field-group">
+                  <label class="label-search adults" for="adults">Взрослые:</label>
+                  <div>
+                    <div class="input-number-wrapper">
+                      <input class="search-form-field adults-field" type="text" id="adults" name="adults" placeholder="2" value="2">
+                      <button class="input-number-button minus" type="button"></button>
+                      <button class="input-number-button plus" type="button"></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="field-group">
+                  <label class="label-search children" for="children">Дети:
+                    <div class="children-info-wrapper">
+                      <span class="children-info"></span>
+                      <div class="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
+                    </div>
+                  </label>
+                  <div>
+                    <div class="input-number-wrapper">
+                      <input class="search-form-field children-field" type="text" id="children" name="children" placeholder="2" value="1">
+                      <button class="input-number-button minus" type="button"></button>
+                      <button class="input-number-button plus" type="button"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="search-form-link" href="#">Найти</a>
+            </form>
+          </section>
+        </div>
+      </div>
+
+
     </div>
   </body>
 </html>

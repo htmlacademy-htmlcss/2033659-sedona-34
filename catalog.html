@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
@@ -98,7 +98,7 @@
                 </ul>
               </fieldset>
               <fieldset class="catalog-filter-group filter-accommodation">
-                <legend class="catalog-filter-title">Тип жилья:</legend>
+                <legend class="catalog-filter-title">Тип Жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
@@ -123,11 +123,8 @@
                   </li>
                 </ul>
               </fieldset>
-
               <fieldset class="catalog-filter-group filter-price">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-
-
                 <div class="range-wrapper-inputs">
                   <div class="range-input-container">
                     <label class="range-input-label" for="range-input-min">от</label>
@@ -138,7 +135,6 @@
                     <input class="range-input range-input-max" id="range-input-max" type="number" value="9000" name="max-price">
                   </div>
                 </div>
-
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar">
@@ -150,8 +146,6 @@
                       </button>
                     </div>
                   </div>
-
-
                 </div>
               </fieldset>
               <div class="filter-button-column">
@@ -164,9 +158,9 @@
         <section class="catalog-selection">
           <h2 class="catalog-selection-title">Найдено гостиниц: 38</h2>
           <select class="select-control" aria-label="Сортировка">
-            <option value="popular">Сначала популярное</option>
-            <option value="cheap">Сначала дешёвое</option>
-            <option value="expensive">Сначала дорогое</option>
+            <option value="popular">Сначала дешёвые</option>
+            <option value="cheap">Сначала дорогие</option>
+            <option value="expensive">Сначала популярные</option>
           </select>
           <div class="view-wrapper">
             <a class="view-link view-current" href="#">
